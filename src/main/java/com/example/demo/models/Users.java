@@ -1,9 +1,11 @@
 package com.example.demo.models;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @AllArgsConstructor
@@ -14,9 +16,11 @@ public class Users {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @NotNull
     private String username;
     private String firstName;
     private String lastName;
+    @NotNull
     private String password;
     private String location;
     private Float cashBack;
