@@ -2,8 +2,6 @@ package com.example.demo.controller;
 
 import com.example.demo.models.FileMaker;
 import com.example.demo.service.FileMakerService;
-import org.apache.catalina.webresources.FileResource;
-import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.core.io.FileUrlResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -11,9 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.URLEncoder;
 
 @RestController
@@ -23,7 +19,7 @@ public class FileMakerController {
     private final FileMakerService fileMakerService;
 
 //    private String uri="C:/Users/JJK  YO'LDASHEV/Desktop/demo";
-    private String uri="C:/Users/Public/Desktop/demo";
+    private String uri="C:/Users/acer/Desktop/Projects/demo";
     public FileMakerController(FileMakerService fileMakerService) {
         this.fileMakerService = fileMakerService;
     }
