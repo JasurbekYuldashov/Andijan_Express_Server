@@ -13,11 +13,7 @@
 	<version>1.0.0</version>
 	<name>Andijan_Express_Server</name>
 	<description>Demo project for Spring Boot</description>
-	<packaging>war</packaging>
-
-	<properties>
-		<java.version>11</java.version>
-	</properties>
+	<packaging>jar</packaging>
 
 	<dependencies>
 		<dependency>
